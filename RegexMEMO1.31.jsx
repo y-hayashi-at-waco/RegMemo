@@ -1,4 +1,4 @@
-﻿#target indesign
+#target indesign
 #targetengine RegMemo
 
     Array.prototype.includes = function(item){
@@ -117,11 +117,12 @@ var button3 = palette1.add("button", undefined, undefined, {name: "button13"});
      }    
     
 var divider3 = palette1.add("panel", undefined, undefined, {name: "divider3"}); 
-    divider2.alignment = "fill";         
+    divider3.alignment = "fill";         
     
 var statictext1 = palette1.add("statictext", undefined, undefined, {name: "statictext1", multiline: true}); 
-      statictext1.text =  "登録した情報をリストから削除したい場合は、\n編集ボタンで情報を呼び出して\nテキストボックスを空欄にしてください";     
+      statictext1.text =  "登録した情報をリストから削除したい場合は、編集ボタンで情報を呼び出してタイトル、正規表現パターンの欄を共に空欄にしてください";     
       statictext1.preferredSize.width = myWidth
+      statictext1.preferredSize.height = 55
 //-----------------------------------------------------</SUI>-----------------------------------------------------
 
 palette1.show();
